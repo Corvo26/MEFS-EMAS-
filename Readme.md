@@ -18,5 +18,5 @@ Ensure you have the following tools and software installed:
 - A Firebase account for backend database setup  
 
 ### Installation  
-1. Clone the repository:  
+1.Clone the repository:  
 2.Instally Visual_Studio or another code editor supporting JavaScript development  
