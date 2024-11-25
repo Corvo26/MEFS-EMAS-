@@ -11,7 +11,7 @@ WeatherApp is a mobile application designed to display meteorological data retri
 
 ## Prerequisites and Installation Instructions  
 
-### Prerequisites  
+### Pre-requisites  
 Ensure you have the following tools and software installed:  
 - [Visual Studio Code](https://code.visualstudio.com/) or any other code editor supporting JavaScript development  
 - A modern web browser (e.g., Chrome, Firefox, Edge)  
