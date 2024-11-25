@@ -19,8 +19,8 @@
 #define DATABASE_URL "https://mefs-336a1-default-rtdb.firebaseio.com"
 
 // Definir email e senha do usuário Firebase
-#define USER_EMAIL "samuelbfigueira@gmail.com"
-#define USER_PASSWORD "Doctorwho2806t@rdis"
+#define USER_EMAIL "..."
+#define USER_PASSWORD "..."
 
 // Definir pino do sensor de água
 #define WATER_SENSOR 16
