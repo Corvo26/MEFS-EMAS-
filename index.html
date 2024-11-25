@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>MEFS - Estação Meteorológica</title>
+</head>
+
+<body onload="iniciarPagina()">
+    <!-- Layout Inicial -->
+    <div id="iniciar" class="layout">
+        <h2 class="DEEC">DEEC</h2>
+        <img class="img-DEEC" src="https://noticias.uc.pt/site/assets/files/312072/logomarca_1290.1200x0.jpg">
+    </div>
+
+
+    <div id="login-layout" class="layout" style="display: none;">
+        <div class="caixa_login">
+            <h2 class="Login">Login</h2>
+            <h2 class="titulo-utiliz">Utilizador</h2>
+            <input class="utlizador" placeholder="Usuário">
+            <h2 class="titulo-pass">Password</h2>
+            <input class="password" placeholder="Senha">
+            
+            <div class="caixa-login">
+                
+                <button class="botão_login" onclick="login()">Entrar</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div id="main-layout" class="layout" style="display: none;">
+        <div>
+            <h2 class="data-hora">Hora e Data</h2>
+        </div>
+        <div class="caixa-maior">
+            <div class="caixa-media">
+                <h2 class="cidade">Tempo de Coimbra</h2>
+                <div class="caixa-temp">
+                    <img class="img-temperatura" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/284533/thermometer-temperature.svg">
+                    <p class="tempo">0</p>
+
+                </div>
+                <div class="caixa-chuva">
+                    <img class="img-chuva" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/279144/rain-forecast.svg">
+                    <p class="chuva">0</p>
+                </div>
+                <div class="caixa-uv">
+                    <img class="img-uv" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/418272/summer-sun-block.svg">
+                    <p class="indice-uv">0</p>
+                </div>
+                <div class="caixa-atm">
+                    <img class="img-atm" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/259667/pressure-climate.svg">
+                    <p class="pressao_atm">0</p>
+
+                </div>
+                <div class="caixa-int_vento">
+                    <img class="img-int_vento" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/276658/wind-sign-wind.svg">
+                    <p class="int_vento">0</p>
+                </div>
+                <div class="caixa-ang">
+                    <img class="img-ang" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/253272/wind-rose-compass.svg">
+                    <p class="ang_vento">0</p>
+                </div>
+                <div class="caixa-hum">
+                    <img class="img-hum" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/503801/water-drop.svg">
+                    <p class="humidade">Humidade 76%</p>
+                </div>
+            </div>
+        </div>
+        <div class="caixa-maior2">
+            <div class="caixa-media2">
+                <h2 class="cidade2">Tempo de Coimbra</h2>
+                <div class="caixa-temp2">
+                    <img class="img-temperatura2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/284533/thermometer-temperature.svg">
+                    <p class="tempo2">21ºC</p>
+
+                </div>
+                <div class="caixa-gas2">
+                    <img class="img-gas2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/213461/gas-mask.svg">
+                    <p class="gas2">21ºC</p>
+                </div>
+                <div class="caixa-UV2">
+                    <img class="img-UV2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/418272/summer-sun-block.svg">
+                    <p class="UV2">21ºC</p>
+                </div>
+                <div class="caixa-LUZIR2">
+                    <img class="img-LUZIR2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/220194/sun.svg">
+                    <p class="LUZIR2">21ºC</p>
+                </div>
+                <div class="caixa-LUZ2">
+                    <img class="img-LUZ2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/229559/sun-glasses.svg">
+                    <p class="LUZ2">21ºC</p>
+                </div>
+                <div class="caixa-agua2">
+                    <img class="img-agua2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/279144/rain-forecast.svg">
+                    <p class="agua2">21ºC</p>
+                </div>
+                <div class="caixa-pressao2">
+                    <img class="img-pressao2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/259667/pressure-climate.svg">
+                    <p class="pressao2">21ºC</p>
+                </div>
+                <div class="caixa-humidade2">
+                    <img class="img-humidade2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/503801/water-drop.svg">
+                    <p class="humidade2">Humidade 76%</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="botão_previsao" onclick="button_previsao()">
+            <img class="img-previsao" alt="login" src="https://www.svgrepo.com/show/535137/angle-right.svg">
+        </button>
+
+    </div>
+
+    <div id="Previsao-Layout" class="layout" style="display: none;">
+        <div class="caixa_previsao">
+            <h2 class="Previsao">Previsao- 15 segundos</h2>
+            <p class="PrevTemp">...</p>
+            <p class="PrevTemp0">...</p>
+            <p class="PrevTemp1">...</p>
+            <p class="PrevTemp2">...</p>
+            <p class="PrevTemp3">...</p>
+            <p class="PrevTemp4">...</p>
+            <p class="PrevTemp5">...</p>
+            <p class="PrevHum">...</p>
+            <p class="PrevHum0">...</p>
+            <p class="PrevHum1">...</p>
+            <p class="PrevHum2">...</p>
+            <p class="PrevHum3">...</p>
+            <p class="PrevHum4">...</p>
+            <p class="PrevHum5">...</p>
+
+            <p class="PrevES">...</p>
+
+
+
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    <script src="script.js"></script> <!-- Seu script personalizado deve vir depois -->
+</body>
+
+</html>
