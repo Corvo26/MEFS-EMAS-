@@ -1,0 +1,476 @@
+/* Reset e Configuração Inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+#iniciar {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    background-size: cover;
+}
+
+#iniciar .DEEC {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 100px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0;
+    /* Ajusta o texto para a parte superior da tela */
+    left: 50%;
+    /* Posiciona o texto no meio da tela */
+    transform: translateX(-50%);
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Garante que o texto fique centralizado */
+}
+
+#iniciar .botao-inicial {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    float: right;
+}
+
+#iniciar .img-buscar0 {
+    width: 20px;
+}
+
+.img-DEEC {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#login-layout {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://turismodocentro.pt/wp-content/uploads/2019/12/Jardim-Coimbra_1920x1080.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+
+
+#login-layout .caixa_login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centraliza completamente */
+    background: black;
+    color: white;
+    opacity: 0.8;
+    width: 20%;
+    height: 32%;
+     border-radius: 15px;
+}
+#login-layout .Login{
+
+
+    transform: translateX(-50%);
+    margin-left: 35%;
+    text-transform: capitalize;
+    margin-top:5%;
+    font-size: 30px;;
+
+}
+
+
+
+
+
+
+#login-layout .utlizador,
+#login-layout .password {
+    width: 90%;
+    /* Ajusta a largura dos inputs */
+    height: 10%;
+    padding: 10px;
+    margin: 20px 0;
+    /* Espaçamento entre os inputs */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+    margin-left:5%;
+}
+
+#login-layout .utlizador {
+    margin-left:5;
+    margin-top: 10px;
+    /* Espaçamento específico no topo */
+}
+
+#login-layout .password {
+    margin-left:5%;
+    margin-top: 10px;
+    /* Espaçamento específico no topo */
+}
+#login-layout .titulo-entrar{
+    margin-left:300px
+
+
+    
+}
+#login-layout .img-login {
+    margin-top:10px;
+    width: 35px;
+    /* Ajusta a largura dos inputs */
+    margin-left:335px;
+    transform: translateX(-50%);
+    /* Centraliza completamente */
+    cursor: pointer;
+    background-color: transparent; /* Remove o fundo branco */
+}
+
+
+#login-layout .titulo-utiliz{
+    margin-top: 20px;
+    margin-left:5%;
+
+}
+#login-layout .titulo-pass{
+    margin-left:5%;
+}
+#login-layout .botão_login{
+    background-color: transparent; /* Remove o fundo branco */
+    width: 0px;
+    height: 00px;
+}
+#login-layout .caixa-login {
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+    display: flex; /* Define layout flexível */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 10px; /* Espaço entre a imagem e o texto */
+}
+
+
+  #login-layout .botão_login {
+      background-color:#333;
+      width:40%;
+      height:20%;
+      margin-left:55%;
+      margin-top:-5%;
+      color:white;    
+      border: none;     
+      padding: 10px 20px;    
+      font-size: 20px; 
+      cursor: pointer;  
+      border-radius: 5px; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Layout Principal */
+#main-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://i.pinimg.com/originals/80/39/d1/8039d11dc13902c3a7e1161fd248f88f.jpg");
+    background-size: cover;
+}
+
+/* Cabeçalho de Data e Hora */
+#main-layout .data-hora {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    color: white;
+    background-color: #333;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    opacity: 0.8;
+}
+
+/* Caixa Principal */
+#main-layout .caixa-maior {
+    position: fixed;
+    top: 0;
+    left: 80%;
+    transform: translateX(-50%);
+    background: #000;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 600px;
+    margin-top: 100px;
+    height: 80%;
+
+
+}
+
+/* Campo de Entrada da Cidade */
+#main-layout .input-cidade {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: white;
+    width: calc(100% - 100px);
+}
+
+/* Botão de Busca */
+#main-layout .botao-buscar {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    float: right;
+}
+
+
+#main-layout .img-buscar {
+    width: 20px;
+}
+
+
+
+/* Estilos para Previsão */
+#main-layout .caixa-media {
+    margin-top: 30px;
+}
+#main-layout .cidade2,
+#main-layout .cidade {
+    font-size: 45px;
+    color: white;
+    margin-top: 20px;
+}
+
+#main-layout .img-temperatura2,
+#main-layout .img-temperatura {
+    width: 30px; /* Define largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem não distorça */
+}
+
+#main-layout .tempo2,
+#main-layout .tempo {
+    color: white;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+
+#main-layout .caixa-humidade2,
+#main-layout .caixa-pressao2,
+#main-layout .caixa-agua2,
+#main-layout .caixa-LUZ2,
+#main-layout .caixa-LUZIR2,
+#main-layout .caixa-UV2,
+#main-layout .caixa-gas2,
+#main-layout .caixa-temp2,
+#main-layout .caixa-hum,
+#main-layout .caixa-ang,
+#main-layout .caixa-int_vento,
+#main-layout .caixa-atm,
+#main-layout .caixa-uv,
+#main-layout .caixa-chuva,
+#main-layout .caixa-temp {
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+    display: flex; /* Define layout flexível */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 10px; /* Espaço entre a imagem e o texto */
+}
+
+
+#main-layout .img-humidade2,
+#main-layout .img-pressao2,
+#main-layout .img-agua2,
+#main-layout .img-LUZ2,
+#main-layout .img-LUZIR2,
+#main-layout .img-UV2,
+#main-layout .img-gas2,
+#main-layout .img-hum,
+#main-layout .img-ang,
+#main-layout .img-int_vento,
+#main-layout .img-atm,
+#main-layout .img-uv,
+#main-layout .img-chuva {
+    width: 30px; /* Define largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem não distorça */
+    margin-left: 5px;
+}
+
+
+#main-layout .humidade2,
+#main-layout .pressao2,
+#main-layout .agua2,
+#main-layout .LUZ2,
+#main-layout .LUZIR2,
+#main-layout .UV2,
+#main-layout .gas2,
+#main-layout .humidade,
+#main-layout .ang_vento,
+#main-layout .int_vento,
+#main-layout .pressao_atm, 
+#main-layout .indice-uv, 
+#main-layout .chuva {
+    color: white;
+    margin-left: 20px;
+    text-transform: capitalize;
+    left: 10px;
+}
+
+
+/* Caixa Principal */
+#main-layout .caixa-maior2 {
+    position: fixed;
+    top: 0;
+    left: 20%;
+    transform: translateX(-50%);
+    background: #000;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 600px;
+    margin-top: 100px;
+    height: 80%;
+
+}
+
+
+/* Estilos para Previsão */
+#main-layout .caixa-media2 {
+    margin-top: 30px;
+}
+
+
+
+
+#main-layout .caixa-menor2 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#main-layout .texto-previsao2 {
+    color: white;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+
+
+#main-layout .caixa-menor_tempo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 20px;
+}
+
+#main-layout .botão_previsao {
+
+    border: none;
+    outline: none;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    width: 60px;
+
+
+}
+#main-layout .img-previsao{
+    width: 60px;
+    margin-left:3300%;
+}
+
+#Previsao-Layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://1.bp.blogspot.com/-38H7aPktjis/XxR8FQkPknI/AAAAAAAA0bc/e7oxUZm0J0YBGiEHa3_OkQlf7JAoRvrgQCLcBGAsYHQ/s2560/mountains_peaks_lake_170485_3840x2160.jpg");
+    background-size: cover;
+
+}
+
+#Previsao-Layout .caixa_previsao {
+    position: fixed;
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centraliza no centro exato da tela */
+    background: #000;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: auto;
+    /* Ajusta a largura para ficar dentro da área */
+    max-width: 1000px;
+    /* Largura máxima para caber melhor em telas pequenas */
+    height: auto;
+    /* Ajusta a altura conforme o conteúdo */
+    margin-top: 0;
+    /* Remove margem superior para centralizar melhor */
+}
+
+#Previsao-Layout .PrevTemp0,
+#Previsao-Layout .PrevTemp1,
+#Previsao-Layout .PrevTemp2,
+#Previsao-Layout .PrevTemp3,
+#Previsao-Layout .PrevTemp4,
+#Previsao-Layout .PrevTemp5,
+#Previsao-Layout .PrevHum0,
+#Previsao-Layout .PrevHum1,
+#Previsao-Layout .PrevHum2,
+#Previsao-Layout .PrevHum3,
+#Previsao-Layout .PrevHum4,
+#Previsao-Layout .PrevHum5,
+#Previsao-Layout .PrevES {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+#Previsao-Layout .Previsao {
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+}
