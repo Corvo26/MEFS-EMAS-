@@ -20,16 +20,22 @@
 
 // Definir email e senha do usuário Firebase
 #define USER_EMAIL "samuelbfigueira@gmail.com"
-#define USER_PASSWORD "Doctorwho2806t@rdis"
+#define USER_PASSWORD "DoctorWho2806T@rdis"
 
 // Definir pino do sensor de água
-#define WATER_SENSOR 16
+#define WATER_SENSOR 14
 #define IIC_ADDR uint8_t(0x76)
-#define rele 25
 // Objetos para comunicação com sensores
 Seeed_BME680 bme680(IIC_ADDR); /* IIC PROTOCOL */
 SI114X SI1145 = SI114X();
+// Configuração do valor de corte do índice UV
+#define relayPin 26
+// Variáveis para controle do tempo
+unsigned long relayOffStart = 0;
+const unsigned long relayOffDuration = 60 * 1000; // 2 minutos em milissegundos
 
+// Estado do relé
+bool relayState = true; // Inicialmente ligado
 // Objetos do Firebase
 FirebaseData fbdo;
 FirebaseAuth auth;
@@ -37,29 +43,37 @@ FirebaseConfig config;
 // Variáveis para controle de envio de dados
 unsigned long sendDataPrevMillis = 0;
 unsigned long count = 0;
-
+/*
 const int OutPin  = 25;   // pino analógico para o sensor de vento (Out)
 const int TempPin = 26;   // pino analógico para o sensor de temperatura (TMP)
-
+*/
 // Definir a tensão de zero vento (ZeroWind_V), que deve ser medida manualmente.
 const float ZeroWind_V = 0.500;  // exemplo de valor (ajuste conforme necessário)
 
 void setup() {
   Serial.begin(115200);
+  pinMode(relayPin, OUTPUT);
+  digitalWrite(relayPin,  LOW); // Relé inicialmente ligado (assumindo LOW ativa o relé)
+  /*
+  pinMode(OutPin, INPUT);      
+  pinMode(TempPin, INPUT);      
+  */
   pinMode(WATER_SENSOR, INPUT);
   Wire.begin();
   TSL2561.init();
   // Inicializar TSL2561
     while (!bme680.init()) {
+    Serial.print("Erro no bme");
     delay(10000);
   }
   while (!SI1145.Begin()) {
+        Serial.print("Erro no sI1145");
         delay(1000);
   }
   
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-  while (WiFi.status() != WL_CONNECTED)
-  {
+  while (WiFi.status() != WL_CONNECTED){
+    Serial.print("Erro ao conectar");
     delay(300);
   }
 
@@ -132,11 +146,14 @@ void enviarDadosFirebase(float temperatura, float pressao, float umidade, float 
   if (Firebase.setFloat(fbdo, "/dados/indice_uv", indiceUV)) {
   } else {
   }
-
+  //Enviar vento
   if (Firebase.setFloat(fbdo, "/dados/vento", vento)) {
   } else {
   }
-  
+  //Enviar carga bateria
+  /*if (Firebase.setFloat(fbdo, "/dados/bateria", vento)) {
+  } else {
+  }*/
   }
 }
 
@@ -155,6 +172,7 @@ void loop() {
   uint16_t luzIR = SI1145.ReadIR();
   float indiceUV = (float)SI1145.ReadUV() / 100;
       // Ler o valor analógico do sensor de vento
+    /*
     int windADunits = analogRead(OutPin);
     float volts = (windADunits * 5.0) / 1024.0;  // Converter o valor A/D para volts
 
@@ -164,20 +182,26 @@ void loop() {
 
     // Calcular a velocidade do vento em MPH usando a fórmula fornecida
     float vento = pow(((volts - ZeroWind_V) / (3.038517 * pow(tempC, 0.115157))) / 0.087288, 3.009364);
+    */
 
-    // Mostrar os valores no monitor serial
-    Serial.print("Volts: ");
-    Serial.print(volts);
-    Serial.print("\t");
-    Serial.print("Temp: ");
-    Serial.print(tempC);
-    Serial.print(" C\t");
-    Serial.print("Wind Speed: ");
-    Serial.print(vento);
-    Serial.println(" MPH");
+    if (indiceUV < 0.03 && relayState && millis() - relayOffStart >= relayOffDuration) {
+    // Se o índice UV estiver abaixo do limite e o relé estiver ligado
+    Serial.println("Índice UV baixo. Desligando sensores...");
+    digitalWrite(relayPin, LOW); // Desliga o relé
+    relayState = false;
+    relayOffStart = millis(); // Marca o tempo do desligamento
+    }
+     if (!relayState && millis() - relayOffStart >= relayOffDuration) {
+    Serial.println("Religando sensores...");
+    digitalWrite(relayPin, HIGH); // Religa o relé
+    relayState = true;
+    relayOffStart = millis();
+    }
+
+
 
   delay(750);  // Atraso de 750ms para leitura contínua
-  enviarDadosFirebase(temperatura, pressao, umidade, gas, waterLevel, luzVisivel, luzIR, indiceUV,vento);
+  enviarDadosFirebase(temperatura, pressao, umidade, gas, waterLevel, luzVisivel, luzIR, indiceUV,0);
 
 }
 
