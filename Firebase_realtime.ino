@@ -16,8 +16,8 @@
 #define DATABASE_URL "https://mefs-336a1-default-rtdb.firebaseio.com"
 
 // Definir email e senha do usuário Firebase
-#define USER_EMAIL "samuelbfigueira@gmail.com"
-#define USER_PASSWORD "DoctorWho2806T@rdis"
+#define USER_EMAIL "..."
+#define USER_PASSWORD "..."
 
 // Definir pino do botão de controle e do relay
 #define BUTTON_PIN 13 // Pino do botão de controle
