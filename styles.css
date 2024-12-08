@@ -10,8 +10,8 @@
 
 /* Iniciar */
 #iniciar {
-    height: 100vh;
-    width: 100vw;
+    height: 1300px;
+    width: 2100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,8 +59,8 @@
 
 /* Layout de Login */
 #login-layout {
-    height: 100vh; /* Ajusta a altura da tela */
-    width: 100vw; /* A largura é 100% da tela */
+    height: 1300px;
+    width: 2100px;
     background-image: url("https://turismodocentro.pt/wp-content/uploads/2019/12/Jardim-Coimbra_1920x1080.jpg");
     background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
     background-position: center center; /* Centraliza a imagem */
@@ -176,8 +176,8 @@
     display: flex; /* Exibe os filhos em linha */
     justify-content: flex-start; /* Inicia a disposição dos elementos da esquerda */
     align-items: flex-start; /* Alinha no topo */
-    height: 100vh; /* Altura total da tela */
-    width: 100vw; /* Largura total da tela */
+    height: 1300px;
+    width: 2100px;
     background-image: url("https://i.pinimg.com/originals/80/39/d1/8039d11dc13902c3a7e1161fd248f88f.jpg");
     background-size: cover; /* Garante que a imagem de fundo cubra a tela sem distorção */
     background-position: center center; /* Centraliza a imagem */
@@ -461,8 +461,8 @@
     /* Fixa o menu na tela */
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    height: 1300px;
+    width: 2100px;
     display: flex;
     justify-content: center;
     /* Centraliza horizontalmente */
@@ -591,8 +591,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 1300px;
+    width: 2100px;
     background-image: url("https://images.pexels.com/photos/68357/pexels-photo-68357.jpeg?cs=srgb&dl=chuva-chuva-na-janela-gotas-de-chuva-pingos-de-chuva-68357.jpg&fm=jpg");
     background-size: cover;
     background-position: center;
@@ -684,8 +684,8 @@
 #Carga_Bateria-Layout {
     display: flex;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 1300px;
+    width: 2100px;
     background-image: url("https://brasilalemanhanews.com.br/wp-content/uploads/2020/01/Pixabay-Energia-Fotovoltaica-baixa.jpg");
     background-size: cover;
     background-position: center;
@@ -796,7 +796,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 1300px;
+    width: 2100px;
     background-color: #f4f4f9;
     background-image: url("https://metalica.com.br/wp-content/uploads/2021/02/Cabos-eletricos.jpg");
     background-size: cover;
