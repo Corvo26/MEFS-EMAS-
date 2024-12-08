@@ -537,29 +537,7 @@
     /* Adiciona um efeito sutil de hover */
 }
 
-@media (max-width: 600px) {
-    .caixa-login {
-        width: 90%; /* Ajuste para garantir que caiba em telas menores */
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
-        padding: 10px; /* Adiciona espaçamento interno para melhor aparência */
-    }
 
-    .input-cidade {
-        font-size: 5vw; /* Aumenta o tamanho da fonte para melhor legibilidade */
-        width: 100%; /* Garante que o input ocupe toda a largura disponível */
-        box-sizing: border-box; /* Inclui padding e border na largura total */
-    }
-
-    .botao-buscar {
-        width: 40px; /* Ajusta o tamanho do botão para ser mais clicável */
-        height: 40px; /* Garante que o botão seja quadrado */
-    }
-
-    .data-hora {
-        font-size: 5vw; /* Aumenta o tamanho da fonte para melhor legibilidade */
-        text-align: center; /* Centraliza o texto para uma melhor apresentação */
-    }
-}
 
 #Previsao-Layout {
     display: flex;
@@ -606,8 +584,8 @@
     text-align: center;
     color: white;
     overflow-y: auto;
-    left:30%;
-    top:20%;
+    left:600px;
+    top:300px;
 }
 
 #Previsao-Layout .Previsao {
