@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    overflow-x: scroll; /* Permite rolagem horizontal */
+    
 }
 
 /* Iniciar */
@@ -64,6 +64,7 @@
     background-image: url("https://turismodocentro.pt/wp-content/uploads/2019/12/Jardim-Coimbra_1920x1080.jpg");
     background-size: cover;
     position: relative;
+    overflow-x: scroll; 
 }
 
 #login-layout .caixa_login {
