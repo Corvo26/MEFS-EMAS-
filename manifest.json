@@ -4,5 +4,9 @@
   "background_color": "#ffffff",
   "short_name": "MEEPS",
   "id": "https://meps2024.netlify.app/",
-  "description": "Previsao de dados metorologicos, ligado remotamente a uma estacão\""
+  "description": "Previsao de dados metorologicos, ligado remotamente a uma estacão\"",
+  "display_override": [
+    "browser",
+    "window-controls-overlay"
+  ]
 }
