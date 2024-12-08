@@ -431,7 +431,7 @@
 
 /* Estilo do layout do menu */
 #Menu-Layout {
-    position: fixed;
+    position: absolute;
     /* Fixa o menu na tela */
     top: 0;
     left: 0;
