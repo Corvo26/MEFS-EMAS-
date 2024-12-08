@@ -1,5 +1,4 @@
 /* Reset e Configuração Inicial */
-/* Reset e Configuração Inicial */
 /* Estilos gerais */
 * {
     margin: 0;
@@ -56,6 +55,8 @@
 }
 
 /* Layout de Login */
+
+/* Layout de Login */
 #login-layout {
     height: 100vh;
     width: 100vw;
@@ -72,30 +73,30 @@
     background: black;
     color: white;
     opacity: 0.8;
-    width: 20%;
-    height: 32%;
+    width: 400px;
+    height: 390px;
     border-radius: 15px;
 }
 
 #login-layout .Login {
     transform: translateX(-50%);
-    margin-left: 35%;
+    margin-left: 140px;
     text-transform: capitalize;
-    margin-top: 5%;
+    margin-top: 20px;
     font-size: 30px;
 }
 
 #login-layout .utlizador,
 #login-layout .password {
-    width: 90%;
-    height: 10%;
+    width: 360px;
+    height: auto;
     padding: 10px;
     margin: 20px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #333;
     color: white;
-    margin-left: 5%;
+    margin-left: 20px;
 }
 
 #login-layout .utlizador {
@@ -158,6 +159,10 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+
+
+
 
 
 /* Layout Principal */
@@ -428,7 +433,6 @@
 }
 
 /* Estilo do layout do menu */
-
 #Menu-Layout {
     position: fixed;
     /* Fixa o menu na tela */
@@ -461,7 +465,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
     transition: box-shadow 0.3s ease-in-out; /* Transição apenas para a sombra */
-
 }
 
 /* Estilo dos botões */
@@ -536,6 +539,31 @@
     background-color: rgba(0, 0, 0, 0.2);
     /* Adiciona um efeito sutil de hover */
 }
+
+@media (max-width: 600px) {
+    .caixa-login {
+        width: 90%; /* Ajuste para garantir que caiba em telas menores */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        padding: 10px; /* Adiciona espaçamento interno para melhor aparência */
+    }
+
+    .input-cidade {
+        font-size: 5vw; /* Aumenta o tamanho da fonte para melhor legibilidade */
+        width: 100%; /* Garante que o input ocupe toda a largura disponível */
+        box-sizing: border-box; /* Inclui padding e border na largura total */
+    }
+
+    .botao-buscar {
+        width: 40px; /* Ajusta o tamanho do botão para ser mais clicável */
+        height: 40px; /* Garante que o botão seja quadrado */
+    }
+
+    .data-hora {
+        font-size: 5vw; /* Aumenta o tamanho da fonte para melhor legibilidade */
+        text-align: center; /* Centraliza o texto para uma melhor apresentação */
+    }
+}
+
 #Previsao-Layout {
     display: flex;
     justify-content: center;
