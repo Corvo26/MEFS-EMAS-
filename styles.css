@@ -1,4 +1,6 @@
 /* Reset e Configuração Inicial */
+/* Reset e Configuração Inicial */
+/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/* Iniciar */
 #iniciar {
     height: 100vh;
     width: 100vw;
@@ -26,13 +29,9 @@
     color: black;
     position: absolute;
     top: 0;
-    /* Ajusta o texto para a parte superior da tela */
     left: 50%;
-    /* Posiciona o texto no meio da tela */
     transform: translateX(-50%);
-    /* Centraliza o texto horizontalmente */
     text-align: center;
-    /* Garante que o texto fique centralizado */
 }
 
 #iniciar .botao-inicial {
@@ -56,7 +55,7 @@
     transform: translate(-50%, -50%);
 }
 
-
+/* Layout de Login */
 #login-layout {
     height: 100vh;
     width: 100vw;
@@ -65,14 +64,11 @@
     position: relative;
 }
 
-
-
 #login-layout .caixa_login {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Centraliza completamente */
     background: black;
     color: white;
     opacity: 0.8;
@@ -82,30 +78,19 @@
 }
 
 #login-layout .Login {
-
-
     transform: translateX(-50%);
     margin-left: 35%;
     text-transform: capitalize;
     margin-top: 5%;
     font-size: 30px;
-    ;
-
 }
-
-
-
-
-
 
 #login-layout .utlizador,
 #login-layout .password {
     width: 90%;
-    /* Ajusta a largura dos inputs */
     height: 10%;
     padding: 10px;
     margin: 20px 0;
-    /* Espaçamento entre os inputs */
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #333;
@@ -116,36 +101,29 @@
 #login-layout .utlizador {
     margin-left: 5;
     margin-top: 10px;
-    /* Espaçamento específico no topo */
 }
 
 #login-layout .password {
     margin-left: 5%;
     margin-top: 10px;
-    /* Espaçamento específico no topo */
 }
 
 #login-layout .titulo-entrar {
-    margin-left: 300px
+    margin-left: 300px;
 }
 
 #login-layout .img-login {
     margin-top: 10px;
     width: 35px;
-    /* Ajusta a largura dos inputs */
     margin-left: 335px;
     transform: translateX(-50%);
-    /* Centraliza completamente */
     cursor: pointer;
     background-color: transparent;
-    /* Remove o fundo branco */
 }
-
 
 #login-layout .titulo-utiliz {
     margin-top: 20px;
     margin-left: 5%;
-
 }
 
 #login-layout .titulo-pass {
@@ -154,7 +132,6 @@
 
 #login-layout .botão_login {
     background-color: transparent;
-    /* Remove o fundo branco */
     width: 0px;
     height: 00px;
 }
@@ -164,13 +141,9 @@
     color: white;
     margin-top: 40px;
     display: flex;
-    /* Define layout flexível */
     align-items: center;
-    /* Alinha verticalmente no centro */
     gap: 10px;
-    /* Espaço entre a imagem e o texto */
 }
-
 
 #login-layout .botão_login {
     background-color: #333;
@@ -186,9 +159,69 @@
     border-radius: 5px;
 }
 
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    #iniciar .DEEC {
+        font-size: 60px; /* Reduzir o tamanho do texto no celular */
+    }
 
+    #login-layout .caixa_login {
+        width: 80%;
+        height: auto; /* Ajustar altura em telas pequenas */
+    }
 
+    #login-layout .Login {
+        font-size: 24px; /* Diminuir tamanho da fonte */
+        margin-left: 0;
+    }
 
+    #login-layout .utlizador,
+    #login-layout .password {
+        width: 100%;
+        height: 50px; /* Ajuste de altura para inputs */
+    }
+
+    #login-layout .img-login {
+        width: 25px; /* Reduzir o tamanho da imagem */
+    }
+
+    #login-layout .botão_login {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 18px; /* Ajustar tamanho da fonte */
+    }
+
+    #login-layout .caixa-login {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #iniciar .DEEC {
+        font-size: 40px; /* Reduzir ainda mais o tamanho do texto */
+    }
+
+    #login-layout .caixa_login {
+        width: 90%;
+        height: auto; /* Deixa a altura adaptável */
+    }
+
+    #login-layout .Login {
+        font-size: 20px; /* Ajusta a fonte ainda mais */
+    }
+
+    #login-layout .utlizador,
+    #login-layout .password {
+        height: 45px; /* Ajusta a altura dos inputs */
+    }
+
+    #login-layout .botão_login {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 16px; /* Tamanho da fonte menor */
+    }
+}
 
 
 
