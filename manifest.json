@@ -4,7 +4,7 @@
   "background_color": "#ffffff",
   "short_name": "MEEPS",
   "start_url": "https://meps2024.netlify.app/",
-  "description": "Previsao de dados metorologicos, ligado remotamente a uma estação",
+  "description": "Previsao de dados meteorologicos, ligado remotamente a uma estação",
   "display_override": [
     "window-controls-overlay",
     "browser"
@@ -18,5 +18,17 @@
   "categories": [
     "utilities",
     "weather"
+  ],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }
