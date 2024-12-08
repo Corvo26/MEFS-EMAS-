@@ -184,6 +184,12 @@
     justify-content: center;
     align-items: center;
     background-size: cover;
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* A imagem fica fixa ao rolar */
+    position: relative;
+    overflow-x: scroll; /* Permite a rolagem horizontal */
+    overflow-y: hidden; /* Evita rolagem vertical */
+    white-space: nowrap; /* Garante que o conteúdo não quebre em várias linhas */
 }
 
 /* Cabeçalho de Data e Hora */
@@ -211,6 +217,7 @@
     width: 650px; /* Tamanho fixo */
     height: 900px; /* Tamanho fixo */
     z-index: 1000; /* Opcional, para garantir que fique visível sobre outros elementos */
+    
 }
 
 /* Campo de Entrada da Cidade */
