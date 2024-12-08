@@ -10,6 +10,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
     <title>MEFS - Estação Meteorológica</title>
 </head>
 
@@ -42,14 +46,22 @@
         <div>
             <h2 class="data-hora">Hora e Data</h2>
         </div>
+        <button class="botão_menu" onclick="abrir_menu_main()">
+            <img class="img-menu" alt="icone-menu" src="https://www.svgrepo.com/show/510067/menu.svg">
+        </button>
         <div class="caixa-maior">
             <div class="caixa-media">
-                <h2 class="cidade">Tempo de Coimbra</h2>
+                <h2 class="cidade">Tempo de Coimbra - Open_Meteo</h2>
                 <div class="caixa-temp">
                     <img class="img-temperatura" alt="icone-info-tempo"
                         src="https://www.svgrepo.com/show/284533/thermometer-temperature.svg">
                     <p class="tempo">0</p>
 
+                </div>
+                <div class="caixa-iaq">
+                    <img class="img-iaq" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/281650/lungs-lung.svg">
+                    <p class="iaq_valor">0</p>
                 </div>
                 <div class="caixa-chuva">
                     <img class="img-chuva" alt="icone-info-tempo"
@@ -61,6 +73,9 @@
                         src="https://www.svgrepo.com/show/418272/summer-sun-block.svg">
                     <p class="indice-uv">0</p>
                 </div>
+
+                
+
                 <div class="caixa-atm">
                     <img class="img-atm" alt="icone-info-tempo"
                         src="https://www.svgrepo.com/show/259667/pressure-climate.svg">
@@ -82,11 +97,17 @@
                         src="https://www.svgrepo.com/show/503801/water-drop.svg">
                     <p class="humidade">Humidade 76%</p>
                 </div>
+                <div class="caixa-c_atuais">
+                    <img class="img-c_atuais" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/375932/weather.svg">
+                    <p class="valor_c_atuais">Humidade 76%</p>
+                </div>
             </div>
         </div>
+        
         <div class="caixa-maior2">
             <div class="caixa-media2">
-                <h2 class="cidade2">Tempo de Coimbra</h2>
+                <h2 class="cidade2">Tempo de Coimbra -Sensores</h2>
                 <div class="caixa-temp2">
                     <img class="img-temperatura2" alt="icone-info-tempo"
                         src="https://www.svgrepo.com/show/284533/thermometer-temperature.svg">
@@ -98,6 +119,13 @@
                         src="https://www.svgrepo.com/show/213461/gas-mask.svg">
                     <p class="gas2">21ºC</p>
                 </div>
+
+                <div class="caixa-iaq2">
+                    <img class="img-iaq2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/281650/lungs-lung.svg">
+                    <p class="iaq_valor2">0</p>
+                </div>
+
                 <div class="caixa-UV2">
                     <img class="img-UV2" alt="icone-info-tempo"
                         src="https://www.svgrepo.com/show/418272/summer-sun-block.svg">
@@ -128,37 +156,106 @@
                         src="https://www.svgrepo.com/show/503801/water-drop.svg">
                     <p class="humidade2">Humidade 76%</p>
                 </div>
+                <div class="caixa-vento2">
+                    <img class="img-vento2" alt="icone-info-tempo"
+                        src="https://www.svgrepo.com/show/276658/wind-sign-wind.svg">
+                        <p class="velocidadeVento2">Vento 76%</p>
+                </div>
             </div>
         </div>
-
-        <button class="botão_previsao" onclick="button_previsao()">
-            <img class="img-previsao" alt="login" src="https://www.svgrepo.com/show/535137/angle-right.svg">
-        </button>
-
     </div>
 
     <div id="Previsao-Layout" class="layout" style="display: none;">
+        <button class="botão_menu2" onclick="abrir_menu_previsao()">
+            <img class="img-menu2" alt="icone-menu" src="https://www.svgrepo.com/show/510067/menu.svg">
+        </button>
         <div class="caixa_previsao">
-            <h2 class="Previsao">Previsao- 15 segundos</h2>
-            <p class="PrevTemp">...</p>
-            <p class="PrevTemp0">...</p>
-            <p class="PrevTemp1">...</p>
-            <p class="PrevTemp2">...</p>
-            <p class="PrevTemp3">...</p>
-            <p class="PrevTemp4">...</p>
-            <p class="PrevTemp5">...</p>
-            <p class="PrevHum">...</p>
-            <p class="PrevHum0">...</p>
-            <p class="PrevHum1">...</p>
-            <p class="PrevHum2">...</p>
-            <p class="PrevHum3">...</p>
-            <p class="PrevHum4">...</p>
-            <p class="PrevHum5">...</p>
+            <h2 class="Previsao">Previsão - 6 Horas</h2>
+            <p class="PrevTemp0">Temperatura 0: ...</p>
+            <p class="PrevTemp1">Temperatura 1: ...</p>
+            <p class="PrevTemp2">Temperatura 2: ...</p>
+            <p class="PrevTemp3">Temperatura 3: ...</p>
+            <p class="PrevTemp4">Temperatura 4: ...</p>
+            <p class="PrevTemp5">Temperatura 5: ...</p>
+            <p class="PrevHum0">Humidade 0: ...</p>
+            <p class="PrevHum1">Humidade 1: ...</p>
+            <p class="PrevHum2">Humidade 2: ...</p>
+            <p class="PrevHum3">Humidade 3: ...</p>
+            <p class="PrevHum4">Humidade 4: ...</p>
+            <p class="PrevHum5">Humidade 5: ...</p>
+        </div>
+    </div>
+    
 
-            <p class="PrevES">...</p>
+    <div id="Carga_Bateria-Layout" class="Carga_Bateria-Layout" style="display: block;">
+        <button class="botão_menu3" onclick="abrir_menu_carga()">
+            <img class="img-menu3" alt="icone-menu" src="https://www.svgrepo.com/show/510067/menu.svg">
+        </button>
+        <div class="bateria-caixa">
+            <h3 class="texto_carregamento">Carregamento</h3>
+            <img class="img-bateria" src="images/battery_100.png" alt="Battery Image" />
+            <p class="valor-bateria">Carga: 100%</p>
+            <div class="Carregamento-previsao">
+                <h3>Previsão de Carregamento</h3>
+                <p class="PrevES">Energia Solar: 75%</p>
+                <p class="PrevEE">Energia Eólica: 25%</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Rele-Layout" class="Rele-Layout">
+        <!-- Botão de menu -->
+        <button class="botão_menu4" onclick="abrir_menu_rele()">
+            <img class="img-menu4" alt="Ícone do menu" src="https://www.svgrepo.com/show/510067/menu.svg">
+        </button>
+    
+        <!-- Caixa interna -->
+        <div class="Caixa-Rele">
+            <!-- Título -->
+            <h3 class="texto_rele">RELE</h3>
+    
+            <!-- Estado do relé -->
+            <p class="estado_texto">Estado do Relé:</p>
+            <p class="int_valor_rele">0</p>
+    
+            <!-- Botão do relé -->
+            <button class="botão_rele" onclick="botao_rele()">
+                <img class="img-rele" alt="Ícone do botão do relé" src="https://www.svgrepo.com/show/504058/button-electricity-charging-plug-energy-power.svg">
+            </button>
+        </div>
+    </div>
+    
+    
 
 
 
+
+
+    <div id="Menu-Layout" class="Menu-Layout" style="display: none;">
+        <div class="caixa_menu">
+            <button class="botão_close_menu" onclick="button_close()">
+                <img class="img-close_menu" alt="login" src="https://www.svgrepo.com/show/496058/close-square.svg">
+            </button>
+            <button class="botão_deslogar_menu" onclick="button_Home()">
+                <img class="img-previsao_rtn" alt="login" src="https://www.svgrepo.com/show/535437/home.svg">
+                Voltar ao Inicio
+            </button>
+            <button class="botão_previsao_menu" onclick="button_previsao()">
+                <img class="img-previsao_rtn" alt="login" src="https://www.svgrepo.com/show/490408/time-forward.svg">
+                Previsão
+            </button>
+            <button class="botão_CargaDaBateria_menu" onclick="button_CargaDaBateria()">
+                <img class="img-previsao_rtn" alt="login" src="https://www.svgrepo.com/show/532831/battery-bolt.svg">
+                Carga da bateria
+            </button>
+            <button class="botão_Definicoes_menu" onclick="button_definicoes()">
+                <img class="img-previsao_rtn" alt="login" src="https://www.svgrepo.com/show/476373/options-settings.svg">
+                Controlo e Definicoes do rele
+            </button>
+            <button class="botão_deslogar_menu" onclick="button_deslogar()">
+                <img class="img-previsao_rtn" alt="login" src="https://www.svgrepo.com/show/498959/exit.svg">
+                Deslogar
+            </button>
         </div>
     </div>
 

@@ -78,16 +78,18 @@
     opacity: 0.8;
     width: 20%;
     height: 32%;
-     border-radius: 15px;
+    border-radius: 15px;
 }
-#login-layout .Login{
+
+#login-layout .Login {
 
 
     transform: translateX(-50%);
     margin-left: 35%;
     text-transform: capitalize;
-    margin-top:5%;
-    font-size: 30px;;
+    margin-top: 5%;
+    font-size: 30px;
+    ;
 
 }
 
@@ -108,74 +110,81 @@
     border: 1px solid #ccc;
     background-color: #333;
     color: white;
-    margin-left:5%;
+    margin-left: 5%;
 }
 
 #login-layout .utlizador {
-    margin-left:5;
+    margin-left: 5;
     margin-top: 10px;
     /* Espaçamento específico no topo */
 }
 
 #login-layout .password {
-    margin-left:5%;
+    margin-left: 5%;
     margin-top: 10px;
     /* Espaçamento específico no topo */
 }
-#login-layout .titulo-entrar{
-    margin-left:300px
 
-
-    
+#login-layout .titulo-entrar {
+    margin-left: 300px
 }
+
 #login-layout .img-login {
-    margin-top:10px;
+    margin-top: 10px;
     width: 35px;
     /* Ajusta a largura dos inputs */
-    margin-left:335px;
+    margin-left: 335px;
     transform: translateX(-50%);
     /* Centraliza completamente */
     cursor: pointer;
-    background-color: transparent; /* Remove o fundo branco */
+    background-color: transparent;
+    /* Remove o fundo branco */
 }
 
 
-#login-layout .titulo-utiliz{
+#login-layout .titulo-utiliz {
     margin-top: 20px;
-    margin-left:5%;
+    margin-left: 5%;
 
 }
-#login-layout .titulo-pass{
-    margin-left:5%;
+
+#login-layout .titulo-pass {
+    margin-left: 5%;
 }
-#login-layout .botão_login{
-    background-color: transparent; /* Remove o fundo branco */
+
+#login-layout .botão_login {
+    background-color: transparent;
+    /* Remove o fundo branco */
     width: 0px;
     height: 00px;
 }
+
 #login-layout .caixa-login {
     font-size: 20px;
     color: white;
     margin-top: 40px;
-    display: flex; /* Define layout flexível */
-    align-items: center; /* Alinha verticalmente no centro */
-    gap: 10px; /* Espaço entre a imagem e o texto */
+    display: flex;
+    /* Define layout flexível */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+    gap: 10px;
+    /* Espaço entre a imagem e o texto */
 }
 
 
-  #login-layout .botão_login {
-      background-color:#333;
-      width:40%;
-      height:20%;
-      margin-left:55%;
-      margin-top:-5%;
-      color:white;    
-      border: none;     
-      padding: 10px 20px;    
-      font-size: 20px; 
-      cursor: pointer;  
-      border-radius: 5px; 
-  }
+#login-layout .botão_login {
+    background-color: #333;
+    width: 40%;
+    height: 20%;
+    margin-left: 55%;
+    margin-top: -5%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 
 
@@ -270,6 +279,7 @@
 #main-layout .caixa-media {
     margin-top: 30px;
 }
+
 #main-layout .cidade2,
 #main-layout .cidade {
     font-size: 45px;
@@ -279,9 +289,12 @@
 
 #main-layout .img-temperatura2,
 #main-layout .img-temperatura {
-    width: 30px; /* Define largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: contain; /* Garante que a imagem não distorça */
+    width: 30px;
+    /* Define largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    object-fit: contain;
+    /* Garante que a imagem não distorça */
 }
 
 #main-layout .tempo2,
@@ -291,7 +304,10 @@
     text-transform: capitalize;
 }
 
-
+#main-layout .caixa-c_atuais,
+#main-layout .caixa-iaq,
+#main-layout .caixa-iaq2,
+#main-layout .caixa-vento2,
 #main-layout .caixa-humidade2,
 #main-layout .caixa-pressao2,
 #main-layout .caixa-agua2,
@@ -310,12 +326,18 @@
     font-size: 20px;
     color: white;
     margin-top: 40px;
-    display: flex; /* Define layout flexível */
-    align-items: center; /* Alinha verticalmente no centro */
-    gap: 10px; /* Espaço entre a imagem e o texto */
+    display: flex;
+    /* Define layout flexível */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+    gap: 10px;
+    /* Espaço entre a imagem e o texto */
 }
 
-
+#main-layout .img-c_atuais,
+#main-layout .img-iaq,
+#main-layout .img-iaq2,
+#main-layout .img-vento2,
 #main-layout .img-humidade2,
 #main-layout .img-pressao2,
 #main-layout .img-agua2,
@@ -329,13 +351,19 @@
 #main-layout .img-atm,
 #main-layout .img-uv,
 #main-layout .img-chuva {
-    width: 30px; /* Define largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: contain; /* Garante que a imagem não distorça */
+    width: 30px;
+    /* Define largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    object-fit: contain;
+    /* Garante que a imagem não distorça */
     margin-left: 5px;
 }
 
-
+#main-layout .valor_c_atuais,
+#main-layout .iaq_valor,
+#main-layout .iaq_valor2,
+#main-layout .velocidadeVento2,
 #main-layout .humidade2,
 #main-layout .pressao2,
 #main-layout .agua2,
@@ -346,8 +374,8 @@
 #main-layout .humidade,
 #main-layout .ang_vento,
 #main-layout .int_vento,
-#main-layout .pressao_atm, 
-#main-layout .indice-uv, 
+#main-layout .pressao_atm,
+#main-layout .indice-uv,
 #main-layout .chuva {
     color: white;
     margin-left: 20px;
@@ -403,52 +431,207 @@
     height: 20px;
 }
 
-#main-layout .botão_previsao {
 
+
+#main-layout .botão_menu {
+    border: none;
+    outline: none;
+    background-color: rgba(124, 124, 124, 0.5);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#main-layout .botão_menu:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+#main-layout .img-menu {
+    width: 40px;
+}
+
+#main-layout .botão_rele {
     border: none;
     outline: none;
     background-color: #7c7c7c2b;
     cursor: pointer;
     width: 60px;
-
-
 }
-#main-layout .img-previsao{
+
+#main-layout .img-rele {
     width: 60px;
-    margin-left:3300%;
+    margin-left: 1700%;
 }
 
+/* Estilo do layout do menu */
+
+#Menu-Layout {
+    position: fixed;
+    /* Fixa o menu na tela */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente */
+    z-index: 9999;
+    /* Garante que o menu fica acima de outros elementos */
+}
+
+.caixa_menu {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido mais claro para contraste suave */
+    border-radius: 20px; /* Bordas arredondadas mais suaves */
+    padding: 35px 50px; /* Mais espaçamento interno para um visual mais espaçoso */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Aumenta o espaçamento entre os itens */
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.4); /* Sombra mais suave e difusa para destaque */
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: box-shadow 0.3s ease-in-out; /* Transição apenas para a sombra */
+
+}
+
+/* Estilo dos botões */
+.caixa_menu button:not(.botão_close_menu) {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Mais espaçamento entre o ícone e o texto */
+    padding: 16px 25px; /* Maior área de clique */
+    border: none;
+    border-radius: 12px; /* Bordas arredondadas mais suaves */
+    background: linear-gradient(135deg, #333, #444); /* Gradiente suave entre tons de cinza escuro */
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Apenas transições de cor e sombra */
+}
+.caixa_menu button:first-of-type {
+    margin-top: 3%;
+    /* Cria espaço para o botão de fechar */
+}
+
+.caixa_menu button:hover {
+    background: linear-gradient(135deg, #555, #666); /* Cor mais clara no hover */
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3); /* Sombra suave e destacada */
+    /* Cor mais escura no hover */
+}
+
+/* Estilo das imagens dentro dos botões */
+.caixa_menu button img {
+    width: 28px;
+    height: 28px; /* Tamanho das imagens aumentado para maior visibilidade */
+    /* Tamanho fixo das imagens */
+}
+
+/* Defina o tamanho da imagem para preencher o botão */
+#Menu-Layout .img-close_menu{
+    width: 0 px;
+    /* Tamanho fixo para a largura */
+    height: 60px;
+    /* Tamanho fixo para a altura */
+    background-color: transparent;
+    /* Cor de fundo da imagem */
+    object-fit: cover;
+    margin-left: -30%;
+}
+
+#Menu-Layout .botão_close_menu {
+    position: fixed;
+    top: 3%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+    /* Centraliza completamente */
+    width: 40px;
+    /* Tamanho do botão ajustado para o tamanho da imagem */
+    height: 60px;
+    /* Tamanho do botão ajustado para o tamanho da imagem */
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    /* Remove o contorno */
+    padding: 0;
+    /* Remove qualquer padding adicional */
+    background: transparent;
+    /* Garante que o fundo do botão seja transparente */
+    border:none;
+}
+
+/* Opcional: caso queira adicionar um efeito de hover */
+.botão_close_menu:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Adiciona um efeito sutil de hover */
+}
 #Previsao-Layout {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-image: url("https://1.bp.blogspot.com/-38H7aPktjis/XxR8FQkPknI/AAAAAAAA0bc/e7oxUZm0J0YBGiEHa3_OkQlf7JAoRvrgQCLcBGAsYHQ/s2560/mountains_peaks_lake_170485_3840x2160.jpg");
+    background-image: url("https://images.pexels.com/photos/68357/pexels-photo-68357.jpeg?cs=srgb&dl=chuva-chuva-na-janela-gotas-de-chuva-pingos-de-chuva-68357.jpg&fm=jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+#Previsao-Layout .botão_menu2 {
+    border: none;
+    outline: none;
+    background-color: rgba(124, 124, 124, 0.5);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#Previsao-Layout .botão_menu2:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+#Previsao-Layout .img-menu2 {
+    width: 40px;
 }
 
 #Previsao-Layout .caixa_previsao {
-    position: fixed;
-    top: 50%;
-    /* Centraliza verticalmente */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%);
-    /* Centraliza no centro exato da tela */
-    background: #000;
-    opacity: 0.8;
-    border-radius: 25px;
-    padding: 20px;
-    width: auto;
-    /* Ajusta a largura para ficar dentro da área */
-    max-width: 1000px;
-    /* Largura máxima para caber melhor em telas pequenas */
-    height: auto;
-    /* Ajusta a altura conforme o conteúdo */
-    margin-top: 0;
-    /* Remove margem superior para centralizar melhor */
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    overflow-y: auto;
+    left:30%;
+    top:20%;
+}
+
+#Previsao-Layout .Previsao {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #Previsao-Layout .PrevTemp0,
@@ -462,15 +645,230 @@
 #Previsao-Layout .PrevHum2,
 #Previsao-Layout .PrevHum3,
 #Previsao-Layout .PrevHum4,
-#Previsao-Layout .PrevHum5,
-#Previsao-Layout .PrevES {
-    font-size: 20px;
-    color: white;
-    margin-top: 20px;
+#Previsao-Layout .PrevHum5 {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-#Previsao-Layout .Previsao {
-    font-size: 40px;
+#Previsao-Layout .PrevTemp0:hover,
+#Previsao-Layout .PrevTemp1:hover,
+#Previsao-Layout .PrevTemp2:hover,
+#Previsao-Layout .PrevTemp3:hover,
+#Previsao-Layout .PrevTemp4:hover,
+#Previsao-Layout .PrevTemp5:hover,
+#Previsao-Layout .PrevHum0:hover,
+#Previsao-Layout .PrevHum1:hover,
+#Previsao-Layout .PrevHum2:hover,
+#Previsao-Layout .PrevHum3:hover,
+#Previsao-Layout .PrevHum4:hover,
+#Previsao-Layout .PrevHum5:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+
+/* Estilo geral do layout */
+#Carga_Bateria-Layout {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://brasilalemanhanews.com.br/wp-content/uploads/2020/01/Pixabay-Energia-Fotovoltaica-baixa.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+}
+
+/* Caixa principal */
+#Carga_Bateria-Layout .bateria-caixa {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 11px 15px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    left:30%;
+    position: relative;   
+    top: 20%; /* Substitui o margin-top */
+    height:auto;
+    
+}
+
+/* Texto de carregamento */
+#Carga_Bateria-Layout .texto_carregamento {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem da bateria */
+#Carga_Bateria-Layout .img-bateria {
+    width: 150px;
+    height: auto;
+    margin: 30px ;
+    animation: pulse 1.5s infinite; /* Animação pulsante */
+}
+
+/* Texto de carga */
+#Carga_Bateria-Layout .valor-bateria {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 80px;
+}
+
+/* Caixa de previsão de carregamento */
+#Carga_Bateria-Layout .Carregamento-previsao {
+    background: rgba(0, 0, 0, 0.8);
     color: white;
-    margin-top: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Títulos dentro da previsão */
+#Carga_Bateria-Layout .Carregamento-previsao h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    color: #FFD700; /* Dourado */
+}
+
+/* Animações */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#Carga_Bateria-Layout .botão_menu3 {
+    border: none;
+    outline: none;
+    background-color: rgba(124, 124, 124, 0.5);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#Carga_Bateria-Layout .botão_menu3:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+#Carga_Bateria-Layout .img-menu3 {
+    width: 40px;
+}
+
+
+
+
+
+/* Estilização geral do layout do relé */
+#Rele-Layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    background-image: url("https://metalica.com.br/wp-content/uploads/2021/02/Cabos-eletricos.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+    padding: 20px;
+}
+
+/* Caixa interna */
+#Rele-Layout .Caixa-Rele {
+    position:relative;
+    background: rgba(255, 255, 255, 0.85); /* Fundo translúcido */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    left:40%;
+    top:30%;
+}
+
+/* Botão do menu */
+
+#Rele-Layout .botão_menu4 {
+    border: none;
+    outline: none;
+    background-color: rgba(124, 124, 124, 0.5);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#Rele-Layout .botão_menu4:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+#Rele-Layout .img-menu4 {
+    width: 40px;
+}
+
+/* Título */
+#Rele-Layout .texto_rele {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Texto de estado do relé */
+#Rele-Layout .estado_texto {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#Rele-Layout .int_valor_rele {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Botão do relé */
+#Rele-Layout .botão_rele {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#Rele-Layout .img-rele {
+    width: 80px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse no botão */
+#Rele-Layout .botão_rele:hover .img-rele {
+    transform: scale(1.1);
 }
