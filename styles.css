@@ -174,6 +174,10 @@
     width: 100vw;
     background-image: url("https://i.pinimg.com/originals/80/39/d1/8039d11dc13902c3a7e1161fd248f88f.jpg");
     background-size: cover;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
 }
 
 /* Cabeçalho de Data e Hora */
