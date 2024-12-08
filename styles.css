@@ -18,24 +18,7 @@
     background: white;
     background-size: cover;
 }
-@media screen and (orientation: portrait) {
-    #iniciar {
-        display: none; /* Oculta o conteúdo principal */
-    }
 
-    body::before {
-        content: "Por favor, vire o dispositivo para o modo paisagem.";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
-        background-color: black;
-        color: white;
-        font-size: 2rem;
-        text-align: center;
-    }
-}
 
 #iniciar .DEEC {
     border: none;
