@@ -221,6 +221,9 @@ function abrir_menu_main(){
     document.getElementById('main-layout').style.display = 'block';
     document.getElementById('Previsao-Layout').style.display = 'none';
     document.getElementById('Menu-Layout').style.display = 'block';
+    document.getElementById('Carga_Bateria-Layout').style.display = 'none';
+    document.getElementById('iniciar').style.display = 'none';
+    document.getElementById('Rele-Layout').style.display = 'none';
 
 
 }
@@ -229,6 +232,9 @@ function abrir_menu_previsao(){
     document.getElementById('main-layout').style.display = 'none';
     document.getElementById('Previsao-Layout').style.display = 'block';
     document.getElementById('Menu-Layout').style.display = 'block';
+    document.getElementById('Carga_Bateria-Layout').style.display = 'none';
+    document.getElementById('iniciar').style.display = 'none';
+    document.getElementById('Rele-Layout').style.display = 'none';
 
 
 }
@@ -240,6 +246,8 @@ function abrir_menu_carga(){
     document.getElementById('Previsao-Layout').style.display = 'none';
     document.getElementById('Menu-Layout').style.display = 'block';
     document.getElementById('Carga_Bateria-Layout').style.display = 'block';
+    document.getElementById('iniciar').style.display = 'none';
+    document.getElementById('Rele-Layout').style.display = 'none';
 
 
 }
@@ -247,6 +255,7 @@ function abrir_menu_carga(){
 function button_close(){
  
     document.getElementById('Menu-Layout').style.display = 'none';
+    
 }
 
 function button_Home(){
@@ -254,6 +263,10 @@ function button_Home(){
     document.getElementById('main-layout').style.display = 'block';
     document.getElementById('Previsao-Layout').style.display = 'none';
     document.getElementById('Menu-Layout').style.display = 'none';
+    document.getElementById('Carga_Bateria-Layout').style.display = 'none';
+    document.getElementById('iniciar').style.display = 'none';
+    document.getElementById('Rele-Layout').style.display = 'none';
+    
 }
 
 function button_CargaDaBateria(){
@@ -262,6 +275,9 @@ function button_CargaDaBateria(){
     document.getElementById('Previsao-Layout').style.display = 'none';
     document.getElementById('Menu-Layout').style.display = 'none';
     document.getElementById('Carga_Bateria-Layout').style.display = 'block';
+    document.getElementById('iniciar').style.display = 'none';
+    document.getElementById('Rele-Layout').style.display = 'none';
+    
 }
 
 function button_definicoes(){
@@ -271,6 +287,7 @@ function button_definicoes(){
     document.getElementById('Menu-Layout').style.display = 'none';
     document.getElementById('Carga_Bateria-Layout').style.display = 'none';
     document.getElementById('Rele-Layout').style.display = 'block';
+    document.getElementById('iniciar').style.display = 'none';
 }
 function button_deslogar(){
     document.getElementById('login-layout').style.display = 'block';
@@ -279,6 +296,7 @@ function button_deslogar(){
     document.getElementById('Menu-Layout').style.display = 'none';
     document.getElementById('Carga_Bateria-Layout').style.display = 'none';
     document.getElementById('Rele-Layout').style.display = 'none'
+    document.getElementById('iniciar').style.display = 'none';
 }
 
 
@@ -291,6 +309,7 @@ function abrir_menu_rele(){
     document.getElementById('Menu-Layout').style.display = 'block';
     document.getElementById('Carga_Bateria-Layout').style.display = 'none';
     document.getElementById('Rele-Layout').style.display = 'block';
+    document.getElementById('iniciar').style.display = 'none';
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -545,6 +564,10 @@ function login() {
         document.getElementById('login-layout').style.display = 'none';
         document.getElementById('main-layout').style.display = 'block';
         document.getElementById('Previsao-Layout').style.display = 'none';
+        document.getElementById('Menu-Layout').style.display = 'none';
+        document.getElementById('Carga_Bateria-Layout').style.display = 'none';
+        document.getElementById('Rele-Layout').style.display = 'none';
+        document.getElementById('iniciar').style.display = 'none';
         document.querySelector('.password').value="";
         document.querySelector('.utlizador').value="";
 
@@ -561,6 +584,9 @@ function button_previsao() {
     document.getElementById('main-layout').style.display = 'none';
     document.getElementById('Previsao-Layout').style.display = 'block';
     document.getElementById('Menu-Layout').style.display = 'none';
+    document.getElementById('Carga_Bateria-Layout').style.display = 'none';
+    document.getElementById('Rele-Layout').style.display = 'none';
+    document.getElementById('iniciar').style.display = 'none';
     
 }
 
@@ -575,7 +601,11 @@ function exibirLayoutInicial() {
     document.getElementById('iniciar').style.display = 'block';
     document.getElementById('login-layout').style.display = 'none';
     document.getElementById('main-layout').style.display = 'none';
-
+    document.getElementById('Previsao-Layout').style.display = 'none';
+    document.getElementById('Menu-Layout').style.display = 'none';
+    document.getElementById('Carga_Bateria-Layout').style.display = 'none';
+    document.getElementById('Rele-Layout').style.display = 'none';
+    
     setTimeout(exibirLayoutLogin, 15000);
 }
 
@@ -585,6 +615,10 @@ function exibirLayoutLogin() {
     document.getElementById('iniciar').style.display = 'none';
     document.getElementById('login-layout').style.display = 'block';
     document.getElementById('main-layout').style.display = 'none';
+    document.getElementById('Previsao-Layout').style.display = 'none';
+    document.getElementById('Menu-Layout').style.display = 'none';
+    document.getElementById('Carga_Bateria-Layout').style.display = 'none';
+    document.getElementById('Rele-Layout').style.display = 'none';
 }
 
 // Função para ler dados do Firebase
