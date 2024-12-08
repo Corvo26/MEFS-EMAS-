@@ -59,12 +59,16 @@
 
 /* Layout de Login */
 #login-layout {
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* Ajusta a altura da tela */
+    width: 100vw; /* A largura é 100% da tela */
     background-image: url("https://turismodocentro.pt/wp-content/uploads/2019/12/Jardim-Coimbra_1920x1080.jpg");
-    background-size: cover;
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* A imagem fica fixa ao rolar */
     position: relative;
-    overflow-x: scroll; 
+    overflow-x: scroll; /* Permite a rolagem horizontal */
+    overflow-y: hidden; /* Evita rolagem vertical */
+    white-space: nowrap; /* Garante que o conteúdo não quebre em várias linhas */
 }
 
 #login-layout .caixa_login {
