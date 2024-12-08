@@ -1,0 +1,8 @@
+{
+  "name": "Weather station",
+  "theme_color": "#dbd91d",
+  "background_color": "#ffffff",
+  "short_name": "MEEPS",
+  "id": "https://meps2024.netlify.app/",
+  "description": "Previsao de dados metorologicos, ligado remotamente a uma estacão\""
+}
