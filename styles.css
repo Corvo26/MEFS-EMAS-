@@ -174,8 +174,8 @@
 /* Layout Principal */
 #main-layout {
     display: flex; /* Exibe os filhos em linha */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: flex-start; /* Inicia a disposição dos elementos da esquerda */
+    align-items: flex-start; /* Alinha no topo */
     height: 100vh; /* Altura total da tela */
     width: 100vw; /* Largura total da tela */
     background-image: url("https://i.pinimg.com/originals/80/39/d1/8039d11dc13902c3a7e1161fd248f88f.jpg");
@@ -183,22 +183,21 @@
     background-position: center center; /* Centraliza a imagem */
     background-attachment: fixed; /* A imagem de fundo não se move ao rolar a página */
     position: relative;
-    overflow-x: scroll; /* Permite rolagem horizontal */
+    overflow-x: auto; /* Permite rolagem horizontal */
     overflow-y: hidden; /* Impede rolagem vertical */
-    white-space: nowrap; /* Evita que o conteúdo quebre para a linha seguinte */
 }
 
-/* Ajusta o conteúdo para que ele ultrapasse a largura da tela, permitindo a rolagem */
+/* Container de conteúdo que vai permitir rolagem */
 .content {
-    width: 200%; /* Torna o conteúdo maior que a tela, permitindo a rolagem */
-    height: 100%;
     display: flex;
-    flex-direction: row; /* Organiza o conteúdo em linha (horizontal) */
+    flex-direction: row; /* Organiza o conteúdo horizontalmente */
+    width: max-content; /* Ajusta a largura para o conteúdo, permitindo rolagem */
 }
 
+/* Itens dentro do conteúdo */
 .item {
-    width: 50%; /* Define a largura dos itens dentro do conteúdo */
-    height: 100%;
+    width: 100vw; /* Cada item ocupa a largura total da tela */
+    height: 100vh; /* Cada item ocupa a altura total da tela */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     display: flex;
