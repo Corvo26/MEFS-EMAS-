@@ -187,17 +187,15 @@
     overflow-y: hidden; /* Impede rolagem vertical */
 }
 
-/* Container de conteúdo que vai permitir rolagem */
 .content {
+    width: 200%; /* Torna o conteúdo maior que a tela, permitindo a rolagem */
     display: flex;
-    flex-direction: row; /* Organiza o conteúdo horizontalmente */
-    width: max-content; /* Ajusta a largura para o conteúdo, permitindo rolagem */
+    flex-direction: row; /* Organiza o conteúdo em linha (horizontal) */
 }
 
-/* Itens dentro do conteúdo */
 .item {
-    width: 100vw; /* Cada item ocupa a largura total da tela */
-    height: 100vh; /* Cada item ocupa a altura total da tela */
+    width: 50%; /* Largura dos itens */
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     display: flex;
