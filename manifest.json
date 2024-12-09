@@ -7,10 +7,10 @@
   "description": "Previsao de dados meteorologicos, ligado remotamente a uma estação",
   "display_override": [
     "window-controls-overlay",
-    "fullscreen"
+    "standalone"
   ],
   "id": "Weather station",
-  "display": "browser",
+  "display": "standalone",
   "orientation": "landscape",
   "lang": "pt",
   "scope": "https://meps2024.netlify.app/",
