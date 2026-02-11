@@ -1,7 +1,7 @@
 # WeatherApp
 
 ## Author  
-Samuel Figueira  
+Samuel Figueira and Pedro Tomás
 
 ## Version  
 1.0.0  
