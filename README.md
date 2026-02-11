@@ -1,7 +1,7 @@
 # Weather Monitoring System
 
 ## Author  
-Samuel Figueira  
+Samuel Figueira and Pedro Tomás
 
 ## Version  
 1.3.0  
